@@ -166,14 +166,17 @@
       "object-curly-spacing": "off"
     },
     "parserOptions": {
-      "ecmaVersion": 8,
+      "ecmaVersion": 2020,
       "ecmaFeatures": {
         "impliedStrict": true
       }
     }
   },
   "release": {
-    "branch": "master",
+    "branches": [
+      "main",
+      "master"
+    ],
     "analyzeCommits": {
       "preset": "angular",
       "releaseRules": [
