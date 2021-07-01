@@ -6,6 +6,9 @@
   "engines": {
     "node": ">=10.0.0"
   },
+  "bin": {
+    "nodetlv": "./bin/nodetlv.js"
+  },
   "scripts": {
     "lint": "eslint . && npm run lint:lockfile",
     "lint:fix": "eslint . --fix",
@@ -210,6 +213,7 @@
     "@semantic-release/github"
   ],
   "files": [
+    "bin",
     "src"
   ]
 }
