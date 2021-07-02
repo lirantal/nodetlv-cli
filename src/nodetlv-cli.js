@@ -1,3 +1,5 @@
+#!/usr/bin/env node // eslint-disable-line
+
 const path = require('path')
 const ProgressBar = require('cli-progress')
 const colors = require('colors')
