@@ -27,6 +27,12 @@ A CLI providing a terminal user interface for NodeTLV international Node.js conf
 npx nodetlv-cli
 ```
 
+# Music
+
+Intro music source and attribution: www.bensound.com, Royalty Free Music from Bensound. Composed by Benjamin Tissot (also known as Bensound).
+
+Track URL: https://www.bensound.com/royalty-free-music/track/dubstep
+
 # Contributing
 
 Please consult [CONTRIBUTING](./CONTRIBUTING.md) for guidelines on contributing to this project.
