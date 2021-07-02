@@ -17,7 +17,6 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "coverage:view": "open-cli coverage/lcov-report/index.html",
-    "semantic-release": "semantic-release",
     "lint:lockfile": "lockfile-lint --path package-lock.json --validate-https --allowed-hosts npm yarn"
   },
   "author": {
@@ -85,8 +84,7 @@
     "lint-staged": "^9.2.0",
     "lockfile-lint": "^2.0.1",
     "open-cli": "^5.0.0",
-    "prettier": "^1.18.2",
-    "semantic-release": "^15.13.19"
+    "prettier": "^1.18.2"
   },
   "jest": {
     "testEnvironment": "node",
@@ -236,7 +234,7 @@
     "@semantic-release/github"
   ],
   "files": [
-    "dist",
+    "dist/",
     "assets",
     "bin",
     "src"
