@@ -103,18 +103,6 @@ class App extends Component {
         mapVisible: !this.state.mapVisible
       })
     }, 5500)
-
-    setInterval(() => {
-      const map = this.refs.map.widget
-      map.addMarker({ lon: '34.781769', lat: '32.085300', color: 'red', char: 'X' })
-      screen.render()
-    }, 5780)
-
-    setInterval(() => {
-      const map = this.refs.map.widget
-      map.addMarker({ lon: '133.775131', lat: '-25.274399', color: 'red', char: 'X' })
-      screen.render()
-    }, 5890)
   }
 
   render() {
@@ -232,7 +220,20 @@ class App extends Component {
         />
 
         {this.state.mapVisible ? (
-          <Map ref="map" row={5} col={1} rowSpan={6} colSpan={11} label="" />
+          <Map
+            ref="map"
+            row={5}
+            col={1}
+            rowSpan={6}
+            colSpan={11}
+            label=""
+            {...{
+              markers: [
+                { lon: '133.775131', lat: '-25.274399', color: 'red', char: 'X' },
+                { lon: '34.781769', lat: '32.085300', color: 'red', char: 'X' }
+              ]
+            }}
+          />
         ) : (
           donuts
         )}
