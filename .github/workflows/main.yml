@@ -12,11 +12,10 @@ jobs:
         with:
           node-version: '14'
       - name: install dependencies
-        run: yarn install --frozen-lockfile
+        run: npm ci
       - name: lint code
         run: npm run lint
 
-# skip tests and code coverage for now 🤷‍♂️
 #   build:
 #     strategy:
 #       matrix:
@@ -30,7 +29,7 @@ jobs:
 #         with:
 #           node-version: ${{ matrix.node }}
 #       - name: install dependencies
-#         run: yarn install --frozen-lockfile
+#         run: npm ci
 #       - name: run tests
 #         run: npm run test
 
@@ -45,7 +44,9 @@ jobs:
         with:
           node-version: '14'
       - name: install dependencies
-        run: npm ci --only=production --ignore-engines
+        run: npm ci --ignore-engines
+      - name: compile CLI to dist/
+        run: npm run build
       - name: release
         run: npx semantic-release
         env:
