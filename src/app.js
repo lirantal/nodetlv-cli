@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import blessed from 'blessed'
 import { render } from 'react-blessed'
 import { Grid, GridItem, Donut, Sparkline, Lcd, Map } from 'react-blessed-contrib'
+import open from 'open'
 
 const lcdColors = ['red', 'green', 'blue']
 
@@ -259,7 +260,30 @@ class App extends Component {
             keys: true,
             mouse: true,
             focused: true,
-            commands: { Agenda: {}, 'Submit a CFP': {}, 'Get your tickets!': {}, Website: {} },
+            commands: {
+              Agenda: {
+                callback: () => {
+                  open('https://www.nodetlv.com')
+                }
+              },
+              'Submit a CFP': {
+                callback: () => {
+                  open(
+                    'https://docs.google.com/forms/d/e/1FAIpQLSc-ghisqCyjeFN6pclIpI2UoHW0ZQTCFzFEnRVqO3lQ0QHCOQ/viewform'
+                  )
+                }
+              },
+              'Get your tickets!': {
+                callback: () => {
+                  open('https://www.eventbrite.com/e/nodetlv-2021-tickets-97104248421')
+                }
+              },
+              Website: {
+                callback: () => {
+                  open('https://www.nodetlv.com')
+                }
+              }
+            },
             style: {
               item: {
                 bg: 'gray',
