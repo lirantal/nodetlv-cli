@@ -30,8 +30,8 @@ class App extends Component {
     const sparkline1 = this.refs.sparkline1.widget
     const sparkline2 = this.refs.sparkline2.widget
 
-    var spark1 = [1, 2, 5, 2, 4, 1, 2]
-    var spark2 = [4, 4, 5, 4, 1, 5, 1]
+    const spark1 = [1, 2, 5, 2, 4, 1, 2]
+    const spark2 = [4, 4, 5, 4, 1, 5, 1]
     refreshSpark()
     setInterval(refreshSpark, 150)
 
