@@ -45,6 +45,7 @@
     "url": "https://github.com/lirantal/nodetlv-cli.git"
   },
   "dependencies": {
+    "@babel/runtime": "^7.14.6",
     "blessed": "^0.1.81",
     "cli-progress": "^3.9.0",
     "colors": "^1.4.0",
