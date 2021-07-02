@@ -2,6 +2,7 @@
   "name": "nodetlv-cli",
   "version": "0.0.0-development",
   "description": "A CLI providing a terminal user interface for NodeTLV international Node.js conference in Tel Aviv",
+  "main": "dist/nodetlv-cli.js",
   "engines": {
     "node": ">=10.0.0"
   },
