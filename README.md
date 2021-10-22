@@ -17,6 +17,10 @@
   <a href="./SECURITY.md"><img src="https://img.shields.io/badge/Security-Responsible%20Disclosure-yellow.svg" alt="Responsible Disclosure Policy" /></a>
 </p>
 
+<p align="center">
+  <img src="https://github.com/lirantal/nodetlv-cli/blob/main/.github/nodetlv-cli.jpeg" height="480" />
+</p>
+
 # About
 
 A CLI providing a terminal user interface for NodeTLV international Node.js conference in Tel Aviv
