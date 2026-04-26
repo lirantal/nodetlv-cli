@@ -236,6 +236,10 @@
     ],
     "@semantic-release/github"
   ],
+  "publishConfig": {
+    "provenance": true,
+    "access": "public"
+  },
   "files": [
     "dist/",
     "assets",
