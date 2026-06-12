@@ -4,7 +4,8 @@
   "description": "A CLI providing a terminal user interface for NodeTLV international Node.js conference in Tel Aviv",
   "main": "dist/nodetlv-cli.js",
   "engines": {
-    "node": ">=10.0.0"
+    "npm": ">=11.10.0",
+    "node": ">=24.0.0"
   },
   "bin": {
     "nodetlv": "./dist/nodetlv-cli.js"
